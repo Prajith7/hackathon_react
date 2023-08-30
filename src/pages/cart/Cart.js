@@ -10,7 +10,7 @@ const Cart = () => {
   const dispatch = Globalstate.dispatch;
 
   const total = state.reduce((total, item) => {
-    return total + item.price * item.quantity;
+    return total + item.price ;
   }, 0);
   return (
     <div className="cart">
